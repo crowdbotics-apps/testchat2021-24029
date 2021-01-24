@@ -38,6 +38,8 @@ urlpatterns = [
     path("chat_user_profile/", include("chat_user_profile.urls")),
     path("api/v1/", include("users.api.v1.urls")),
     path("home/", include("home.urls")),
+    path("api/v1/", include("event.api.v1.urls")),
+    path("event/", include("event.urls")),
 ]
 
 admin.site.site_header = "TestChat2021"
